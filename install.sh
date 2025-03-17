@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
-VERSION=1.7.0
-URL=https://github.com/digitalocean/netbox/archive/v${VERSION}.tar.gz
+VERSION=4.2.5
+URL=https://github.com/netbox-community/netbox/archive/v${VERSION}.tar.gz
 CURDIR=`pwd`
 
 # Install pre-requisites
@@ -57,4 +57,4 @@ sudo cp ${CURDIR}/conf/gunicorn_config.py /opt/netbox/
 sudo cp ${CURDIR}/conf/supervisor_netbox.conf /etc/supervisor/conf.d/netbox.conf
 sudo service supervisor restart
 
-echo "DONE"
+echo "NetBox was installed successfully !"
